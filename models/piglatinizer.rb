@@ -1,12 +1,12 @@
 
 class PigLatinizer
 
-def piglatin(word)
-  if word =~ (/\A[aeiou]/i)
-    word = word + 'ay'
-  elsif word =~ (/\A[^aeiou]/i)
-    match = /\A[^aeiou]/i.match(word)
-    word = match.post_match + match.to_s + 'ay'
+def piglatin(words)
+  if words =~ (/\A[aeiou]/i)
+    words = words+ 'ay'
+  elsif words =~ (/\A[^aeiou]/i)
+    match = /\A[^aeiou]/i.match(words)
+    words = match.post_match + match.to_s + 'ay'
   end
   word
 end
