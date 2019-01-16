@@ -2,7 +2,7 @@ require_relative 'config/environment'
 
 class App < Sinatra::Base
 
-  get '/'do
+  get '/' do
     erb :user_input
   end
 
@@ -12,5 +12,6 @@ class App < Sinatra::Base
      @pig_latinized_word = word.to_pig_latin(user_word)
 
     erb :pig
-end
+ end
+
 end
