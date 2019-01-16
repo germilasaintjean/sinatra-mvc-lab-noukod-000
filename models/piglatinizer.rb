@@ -1,6 +1,6 @@
 
 class PigLatinizer
-  
+
 def piglatin(word)
   if word =~ (/\A[aeiou]/i)
     word = word + 'ay'
