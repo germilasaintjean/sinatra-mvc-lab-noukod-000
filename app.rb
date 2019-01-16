@@ -13,3 +13,4 @@ class App < Sinatra::Base
 
     erb :pig
 end
+end
